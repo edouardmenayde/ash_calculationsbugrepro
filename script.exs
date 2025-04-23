@@ -10,4 +10,4 @@ App.CartItem
 |> Ash.create()
 
 
-App.Cart |> Ash.Query.for_read(:read) |> Ash.read!(load: [:suffixes])
+App.Cart |> Ash.Query.for_read(:read) |> Ash.read!(load: [:suffixes, :total])
